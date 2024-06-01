@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather--APP</title>
+    
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="weather">WEATHER APP</h1>
+      <!-- tab -->
+      <div class="weathertab">
+        <p myweather class="tab">Your Weather</p>
+        <p findweather class="tab">Search Weather</p>
+      </div>
+    
+      
+      <div locationacess class="location">
+        <img src="images/location.png" width="80px" height="80px" class="imglocation" />
+        <p class="locationacess">Grant Location Access</p>
+        <p class="allowacess">Allow Access to get weather Information</p>
+        <button grantbtn class="grantbtn">GRANT ACCESS</button>
+      </div>
+
+      <form formsearch class="formsearch">
+        <input type="text" chara  placeholder="Search for City..."  />
+        <button type="submit" searchbtn class="button"  >
+          <img src="images/search.png" width="20px" height="20px" />
+        </button>
+      </form>
+
+      <!-- allow seesion -->
+         <!--- loading screen container -->
+         <div  loading class="loadingcontainer">
+          <img src="./images/loading.gif" width="150" height="150">
+          <p class="loading">Loading</p>
+      </div>
+
+
+
+      <!-- weather detail section -->
+      <div weatherdetail class="weatherdetail">
+        <div class="nameofcity">
+            <!-- name of city -->
+          <p cityname class="cityname"></p> 
+          <!-- flag img -->
+          
+          <img flag />
+        </div>
+        <!-- description -->
+        <p description class="description"></p> 
+        <!-- img of description -->
+        <img weatherimg class="weatherimg" />
+        <!-- temperature -->
+        <p temperature class="temperature"></p>
+        <div class="box">
+          <div class="windspeed">
+            <img src="images/wind.png" width="50px" height="50px" />
+            <p class="wind">WINDSPEED</p>
+            <!-- vlue of speed -->
+            <p windspeed></p>
+          </div>
+          <div class="windspeed">
+            <img src="images/humidity.png" width="50px" height="50px"    />
+            <p class="wind">HUMIDITY</p>
+            <p humidity></p>
+          </div>
+          <div class="windspeed">
+            <img src="images/cloud.png" alt="" width="50px" height="50px" />
+            <p class="wind" >CLOUDS</p>
+            <p clouds></p>
+          </div>
+        </div>
+      </div>
+        
+
+
+      <!-- input search -->
+
+      <img src="images/not-found.png" width="200px" height="200px" class="not-found" notfound >
+
+ 
+
+  
+
+
+
+
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
